@@ -17,11 +17,30 @@
         <div class="header-inner container">
             <!-- Branding/Logo -->
             <a href="../../TEST2.html" class="brand-logo">
-                CampusHub
+                TWU CampusHub
             </a>
         </div>
     </header>
     <main class="site-main">
+        <!-- A lot of this login code came from the old pioneer portal login page. Still needs to be adapted fully-->
+        <div class="col-md-4">
+            <div class="login-card">
+                <h1 style="color:maroon;">Log In</h1>
+                
+                <form class="form-signin" method="post" action="login.asp" id="loginForm" name="loginForm" onsubmit="return checkLogin(this)">
+                    <input class="form-control input-lg" type="text" required="" placeholder="Username" autofocus="" name="username" id="username" tabindex="1" onfocus="this.select()">
+                    <input class="form-control" type="password" required="" placeholder="Password" name="password" id="password" tabindex="2" onfocus="this.select()" autocomplete="off">
+                    <button class="btn btn-primary btn-block btn-lg" type="submit" id="submit1" name="submit1">Log In</button>
+                    <input type="hidden" name="returnURL" value="/mystartpage.asp">
+                    <input type="hidden" name="docid" value="">
+                </form>
+                <hr>
+                <div style="font-size:large">
+                    <div>Don't have an account? <a href="createaccount.asp">Create one.</a></div>
+                    <div>Forgot/reset <a href="https://apps.twu.edu/resetpassword/reset1.aspx">password</a></div>
+                </div>
+            </div>
+        </div>
         <form>
 
         </form>
